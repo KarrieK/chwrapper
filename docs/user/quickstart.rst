@@ -31,7 +31,7 @@ To query the API, we can use the Search object's methods. For example::
     >>> r = s.search_companies("1234567")
     >>> r.status_code
     200
-    >>> r.json
+    >>> r.json()
     {'start_index': 0, 'kind': 'search#companies', 'page_number': 1,
     'total_results': 1,...}
 
