@@ -29,7 +29,7 @@ as an environment variable called :code:`COMPANIES_HOUSE_KEY` or :code:`Companie
 To query the API, we can use the Search object's methods. For example::
 
     >>> r = s.search_companies("1234567")
-    >>> r.status_code
+    >>> r.status_code()
     200
     >>> r.json
     {'start_index': 0, 'kind': 'search#companies', 'page_number': 1,
